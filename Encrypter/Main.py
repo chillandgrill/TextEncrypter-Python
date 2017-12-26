@@ -2,10 +2,10 @@ import os
 from Encrypter.Encrypt import construct_file
 
 file_list = os.listdir(os.getcwd())
-print(file_list)
 
 for file in file_list:
     if file.endswith(".txt"):
+        print(file)
         working = open(file, "r")
         raw_file_text = working.read()
         working.close()
