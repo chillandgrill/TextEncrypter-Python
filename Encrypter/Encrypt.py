@@ -9,6 +9,9 @@ def generate_seed():
     Generate a seed to replace every ASCII character with
     two other ASCII characters, including whitespace, etc.
     """
+    global seed
+    seed = []
+
     for char_id in range(0, len(printable)):
         while True:
             char_sequence = [printable[randint(0, len(printable)-1)], printable[randint(0, len(printable)-1)]]

@@ -10,6 +10,9 @@ def init_string(raw_text):
     Read in the string provided by main, determine the
     seed offset and delete extraneous characters
     """
+    global seed
+    seed = []
+
     global in_file
     in_file = raw_text
     in_file = in_file[10:]
