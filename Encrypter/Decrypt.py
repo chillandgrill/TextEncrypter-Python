@@ -23,6 +23,11 @@ def init_string(raw_text):
 
 
 def parse_seed():
+    
+    """
+    Reads in the seed from the encrypted file
+    """
+    
     seed_as_string = in_file[:(len(printable) * 2)]
 
     for i in range(0, len(printable) * 2, 2):
@@ -31,6 +36,12 @@ def parse_seed():
 
 
 def construct_file():
+    
+    """
+    Decrypts the string read in from the encrypted file, prints it
+    back to the file.
+    """
+    
     parse_seed()
 
     write_to_file = ""
