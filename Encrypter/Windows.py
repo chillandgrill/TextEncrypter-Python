@@ -1,6 +1,6 @@
 import os
-from . import Decrypt
-from . import Encrypt
+from Encrypter import Decrypt
+from Encrypter import Encrypt
 
 file_list = os.listdir(os.getcwd())
 
