@@ -21,6 +21,11 @@ def generate_seed():
 
 
 def construct_file(in_file):
+    
+    """
+    Builds the file based off of the encryption key and prints it to the file
+    """
+    
     offset_seed = printable[randint(0, len(printable)-1)]
 
     generate_seed()
