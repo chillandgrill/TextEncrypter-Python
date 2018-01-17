@@ -26,7 +26,7 @@ def construct_file(in_file):
     Builds the file based off of the encryption key and prints it to the file
     """
     
-    offset_seed = printable[randint(0, len(printable)-1)]
+    offset_seed = printable[randint(0, len(printable)-1)] # Since the seed is technically an alphabet, the offset changes where the alphabet starts, so to speak. It makes the file harder to decipher.
 
     generate_seed()
 
